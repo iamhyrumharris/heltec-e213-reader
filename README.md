@@ -59,4 +59,4 @@ Adjust the serial port as needed.
 
 ## Licensing
 
-Licensing still needs to be confirmed before broad reuse. Some source files may come from upstream projects or vendor examples. Add a clear license once the provenance is sorted out.
+This firmware is licensed under the [Apache License 2.0](LICENSE).
