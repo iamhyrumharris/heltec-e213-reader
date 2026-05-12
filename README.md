@@ -57,6 +57,33 @@ Adjust the serial port as needed.
 - The firmware currently stores books internally as normalized UTF-8 text, even when uploaded from EPUB.
 - EPUB conversion is intentionally browser-side to keep the ESP32 firmware simpler.
 
+## Adding Another Board
+
+Board ports are welcome. For now, keep each new board in its own sketch folder so one board does not break another board's upload flow.
+
+Recommended layout:
+
+```text
+boards/
+  your-board-name/
+    YourBoardReader.ino
+    partitions.csv
+    README.md
+```
+
+If you add a board port, include a short `README.md` with:
+
+- Exact board name and revision.
+- MCU, flash size, and PSRAM details.
+- Display model/driver and resolution.
+- Button pins and wake pin.
+- Battery ADC/control pins, if supported.
+- Required Arduino board package and libraries.
+- Upload settings and partition assumptions.
+- Any known limitations.
+
+Please keep the current Heltec E213 build working. Shared code can be refactored into common headers later, after there are a few working board ports and the duplicated pieces are clear.
+
 ## Licensing
 
 This firmware is licensed under the [Apache License 2.0](LICENSE).
