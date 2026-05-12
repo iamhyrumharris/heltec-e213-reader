@@ -1,0 +1,15 @@
+.DS_Store
+*.epub
+*.txt
+books/
+data/
+downloads/
+Firmware/
+START HERE.pdf
+Parts/
+
+# Workspace-local Arduino CLI install, cores, libraries, and build cache.
+.tools/
+.arduino-cli/*
+!.arduino-cli/
+!.arduino-cli/arduino-cli.yaml

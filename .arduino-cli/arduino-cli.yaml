@@ -1,0 +1,9 @@
+board_manager:
+    additional_urls:
+        - https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/releases/latest/download/package_heltec_esp32_index.json
+build_cache:
+    path: .arduino-cli/build-cache
+directories:
+    data: .arduino-cli/data
+    downloads: .arduino-cli/downloads
+    user: .arduino-cli/user
